@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#120d10">
+<meta name="description" content="MAZQIQ — welcome to fallout.">
+<title>MAZQIQ — welcome to fallout</title>
+<style>
+:root{color-scheme:dark;--accent:#f29ab8}
+*{box-sizing:border-box}
+html,body{margin:0;min-height:100%;background:#100b0e;color:#fff;font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif}
+body{min-height:100svh;overflow:hidden}
+.video-bg{position:fixed;inset:0;z-index:0;background:#160e13}
+.video-bg video{width:100%;height:100%;object-fit:cover;filter:brightness(.48) saturate(.72);transform:scale(1.015)}
+.overlay{position:fixed;inset:0;z-index:1;pointer-events:none;background:linear-gradient(180deg,rgba(12,7,10,.25),rgba(12,7,10,.50)),radial-gradient(ellipse at center,transparent 5%,rgba(9,5,8,.36) 100%)}
+main{position:relative;z-index:2;min-height:100svh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:36px 20px;text-align:center}
+.avatar{width:106px;height:106px;object-fit:cover;border-radius:50%;border:1px solid rgba(255,255,255,.68);box-shadow:0 0 0 6px rgba(255,255,255,.055),0 14px 50px #0008;margin-bottom:23px}
+h1{margin:0;font-size:clamp(2.8rem,9vw,5.1rem);line-height:1;font-weight:800;letter-spacing:.14em;text-indent:.14em;text-shadow:0 5px 30px #0009}
+.tagline{margin:13px 0 0;color:rgba(255,255,255,.72);font-size:.78rem;letter-spacing:.22em}
+.socials{display:flex;gap:13px;justify-content:center;flex-wrap:wrap;margin-top:32px}
+.social{width:53px;height:53px;display:grid;place-items:center;border:1px solid rgba(255,255,255,.25);border-radius:17px;background:rgba(18,14,17,.30);color:#fff;backdrop-filter:blur(9px);-webkit-backdrop-filter:blur(9px);transition:background .2s,border-color .2s,transform .2s,box-shadow .2s}
+.social:hover,.social:focus-visible{outline:none;transform:translateY(-4px);border-color:rgba(255,255,255,.72);background:rgba(255,255,255,.10);box-shadow:0 8px 25px #0004}
+.social svg{width:22px;height:22px;display:block;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.social .solid{fill:currentColor;stroke:none}
+.player{margin-top:25px;display:flex;align-items:center;gap:11px;padding:9px 15px 9px 9px;border:1px solid rgba(255,255,255,.22);border-radius:16px;background:rgba(16,11,14,.38);backdrop-filter:blur(12px);color:#fff;cursor:pointer;transition:.2s}
+.player:hover{background:rgba(255,255,255,.10);border-color:rgba(255,255,255,.5)}
+.play{width:34px;height:34px;border-radius:11px;background:rgba(255,255,255,.13);display:grid;place-items:center}
+.play svg{width:16px;height:16px;fill:#fff}
+.track{text-align:left}.track strong{display:block;font-size:.74rem;font-weight:650}.track small{display:block;margin-top:3px;color:rgba(255,255,255,.58);font-size:.63rem;letter-spacing:.08em}
+.note{margin-top:11px;color:rgba(255,255,255,.42);font-size:.64rem}
+footer{position:fixed;z-index:2;bottom:15px;left:0;right:0;text-align:center;color:#ffffff50;font-size:.6rem;letter-spacing:.16em}
+@media(max-width:480px){.avatar{width:94px;height:94px}.socials{gap:10px}.social{width:51px;height:51px;border-radius:16px}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<div class="video-bg" aria-hidden="true"><video autoplay muted loop playsinline preload="auto" poster="assets/profile.jpg"><source src="assets/background.mp4" type="video/mp4"></video></div>
+<div class="overlay" aria-hidden="true"></div>
+<main>
+<img class="avatar" src="assets/profile.jpg" alt="MAZQIQ">
+<h1>MAZQIQ</h1>
+<p class="tagline">welcome to fallout</p>
+<nav class="socials" aria-label="Social links">
+<a class="social" href="https://t.me/lilpeepfan4ik" target="_blank" rel="noopener noreferrer" title="Telegram" aria-label="Telegram">
+<svg viewBox="0 0 24 24"><path class="solid" d="M21.55 3.25 18.3 20.1c-.24 1.22-.9 1.52-1.83.95l-5.05-3.72-2.44 2.35c-.27.27-.5.5-1.02.5l.36-5.14 9.35-8.45c.4-.36-.09-.56-.62-.2L5.5 13.7.55 12.15c-1.08-.34-1.1-1.08.23-1.6L19.9 3.1c.9-.33 1.7.22 1.65.15Z"/></svg>
+</a>
+<a class="social" href="https://twitch.tv/mazqiq" target="_blank" rel="noopener noreferrer" title="Twitch" aria-label="Twitch">
+<svg viewBox="0 0 24 24"><path d="M4 3H21V15L16.5 19.5H12L9 22.5V19.5H4V3Z"/><path d="M8 3V15H17L19 13V5H8Z"/><path d="M12 7V11M16 7V11"/></svg>
+</a>
+<a class="social" href="https://steamcommunity.com/id/mxkid1337/" target="_blank" rel="noopener noreferrer" title="Steam" aria-label="Steam">
+<svg viewBox="0 0 24 24"><circle cx="17" cy="7" r="4"/><circle cx="17" cy="7" r="1.6"/><circle cx="7" cy="16.5" r="3.2"/><path d="M9.8 15.1 14 10.3M3.2 14.7l1.1.5"/></svg>
+</a>
+<a class="social" href="https://discord.com/users/1035489629991866379" target="_blank" rel="noopener noreferrer" title="Discord" aria-label="Discord">
+<svg viewBox="0 0 24 24"><path d="M7 6.2A15.5 15.5 0 0 1 10 5.3l.5 1a13 13 0 0 1 3 0l.5-1a15.5 15.5 0 0 1 3 .9c1.8 2.5 2.5 5 2.3 7.8a14 14 0 0 1-4 2l-.9-1.4M7 6.2c-1.8 2.5-2.5 5-2.3 7.8a14 14 0 0 0 4 2l.9-1.4M8.8 13h.01M15.2 13h.01M8.7 13a.8.8 0 1 0 0 .01M15.3 13a.8.8 0 1 0 0 .01M9.6 15a7 7 0 0 0 4.8 0"/></svg>
+</a>
+<a class="social" href="https://music.apple.com/ua/playlist/favorite-songs/pl.u-aeU10LDX6x" target="_blank" rel="noopener noreferrer" title="Apple Music playlist" aria-label="Apple Music playlist">
+<svg viewBox="0 0 24 24"><path d="M14.5 5v12.1a2.8 2.8 0 1 1-1.6-2.5V7l7-1.5v9.6a2.8 2.8 0 1 1-1.6-2.5V3.5L14.5 5Z"/></svg>
+</a>
+</nav>
+<button class="player" id="musicToggle" type="button" aria-label="Play music">
+<span class="play" id="playIcon"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+<span class="track"><strong>EKKSTACY — i walk this earth all by myself</strong><small id="playerStatus">CLICK TO PLAY</small></span>
+</button>
+<audio id="audio" preload="none" loop>
+  <source src="assets/music.mp3" type="audio/mpeg">
+</audio>
+<p class="note">Music starts when you press play</p>
+</main>
+<footer>MAZQIQ · PERSONAL SPACE</footer>
+<script>
+const audio=document.getElementById('audio');
+const button=document.getElementById('musicToggle');
+const status=document.getElementById('playerStatus');
+const icon=document.getElementById('playIcon');
+const playSvg='<svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>';
+const pauseSvg='<svg viewBox="0 0 24 24"><path d="M7 5h4v14H7zM14 5h4v14h-4z"/></svg>';
+button.addEventListener('click',async()=>{
+  if(audio.paused){
+    try{await audio.play();status.textContent='NOW PLAYING';icon.innerHTML=pauseSvg;button.setAttribute('aria-label','Pause music');}
+    catch(e){status.textContent='ADD assets/music.mp3';}
+  }else{audio.pause();status.textContent='PAUSED';icon.innerHTML=playSvg;button.setAttribute('aria-label','Play music');}
+});
+audio.addEventListener('ended',()=>{status.textContent='CLICK TO PLAY';icon.innerHTML=playSvg;});
+</script>
+</body>
+</html>
